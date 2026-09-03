@@ -1,9 +1,9 @@
 # Header Menu
 menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-  About: /about
+  Home: /blog/
+  Archives: /blog/archives
+  Tags: /blog/tags
+  About: /blog/about
   
 
 
