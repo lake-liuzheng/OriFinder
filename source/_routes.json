@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "includes": ["/*"],
+  "excludes": [],
+  "redirects": [
+    {
+      "source": "/",
+      "target": "/blog/",
+      "status": 302
+    }
+  ]
+}
