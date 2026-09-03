@@ -90,7 +90,7 @@ function initSearch() {
                         </li>`;
                     });
                 } else {
-                    html = '<li class="p-8 text-center text-sm text-gray-500 font-mono">暂无搜索结果</li>';
+                    html = '<li class="p-8 text-center text-sm text-gray-500 font-mono">No search results.</li>';
                 }
                 searchResults.innerHTML = html;
             });
