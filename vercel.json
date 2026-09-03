@@ -5,6 +5,8 @@
   "rewrites": [
     { "source": "/blog", "destination": "/" },
     { "source": "/blog/", "destination": "/" },
+    { "source": "/blog/:path*/", "destination": "/:path*/index.html" },
     { "source": "/blog/:path*", "destination": "/:path*" }
-  ]
+  ],
+  "cleanUrls": false
 }
