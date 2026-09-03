@@ -1,0 +1,25 @@
+<article class="prose prose-lg max-w-7xl mx-auto px-6 pt-32 pb-12 prose-headings:font-bold prose-img:rounded-none prose-a:text-black hover:prose-a:text-gray-600">
+  <header class="mb-12 text-center">
+    <h1 class="text-4xl font-black mb-4"><%= page.title %></h1>
+  </header>
+  <%
+    // 计算所有标签中文章数量的最大值
+    let maxCount = 0;
+    site.tags.each(function(tag) {
+      if (tag.length > maxCount) maxCount = tag.length;
+    });
+  %>
+
+  <div class="tag-cloud font-mono ">
+    <% site.tags.each(function(tag) { 
+      let size = Math.min(14 + tag.length * 2, 36);  // 最小14px，每多1篇加2px,最大 36px
+      let isHot = tag.length === maxCount;
+    %>
+      <a href="<%- url_for(tag.path) %>" 
+        class="<%- isHot ? 'hot' : '' %>"
+        style="font-size: <%- size %>px;">
+        <%- tag.name %><span class="tag-count"><%- tag.length %></span>
+      </a>
+    <% }); %>
+  </div>
+</article>

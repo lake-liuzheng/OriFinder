@@ -1,0 +1,57 @@
+# Header Menu
+menu:
+  Home: /
+  Archives: /archives
+  Tags: /tags
+  About: /about
+  
+
+
+# Content
+excerpt_length: 150
+
+# Profile
+avatar: 
+favicon: /images/favicon.png
+description: "Know your path. Walk it well."
+social:
+  github: https://github.com/lake-liuzheng
+  email: lake.liuzheng@gmail.com
+
+
+# CDN Configuration
+cdn:
+  enable: false
+  url: https://res.orifinder.com/
+
+
+# TOC
+toc:
+  enable: true
+  max_depth: 3
+  
+# Search
+search:
+  enable: true
+
+# Local search
+local_search:
+  enable: true
+
+# Artalk Comment System
+# https://artalk.js.org/
+artalk:
+  enable: true
+  server: 'https://artalk.orifinder.com' 
+  site: 'OriFinder'
+  css_url: 'https://cdn.jsdelivr.net/npm/artalk@2.10.0/dist/Artalk.css'  
+  js_url: 'https://cdn.jsdelivr.net/npm/artalk@2.10.0/dist/Artalk.js'    
+
+# About CSS
+custom_css:
+  - /css/custom.css
+
+# Footer
+footer:
+  copyright: "© 2026 OriFinder. All rights reserved."
+
