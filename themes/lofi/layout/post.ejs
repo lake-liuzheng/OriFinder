@@ -132,19 +132,26 @@
         <% } %>
     </div>
 
-      <!-- Artalk Comments -->
-      <% if (theme.artalk && theme.artalk.enable) { %>
-        <div id="Comments" class="mt-16 pt-12 border-t border-black">
-           <h3 class="font-bold text-lg mb-8 uppercase tracking-widest">Comments</h3>
-           <div id="artalk-metadata" 
-                data-page-key="<%= config.url + url_for(page.path) %>" 
-                data-page-title="<%= page.title %>"
-                data-server="<%= theme.artalk.server %>"
-                data-site="<%= theme.artalk.site %>"
-                style="display:none;"></div>
-           <div id="artalk"></div>
-        </div>
-      <% } %>
+    <!-- Giscus Comments -->
+    <div class="mt-16 pt-12 border-t border-black">
+    <h3 class="font-bold text-lg mb-8 uppercase tracking-widest">Comments</h3>
+    <script src="https://giscus.app/client.js"
+        data-repo="lake-liuzheng/OriFinder"
+        data-repo-id="R_kgDOUMizSA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOUMizSM4DExnE"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+
     </article>
   </main>
 </div>

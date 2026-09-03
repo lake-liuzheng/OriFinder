@@ -41,7 +41,7 @@ local_search:
 # Artalk Comment System
 # https://artalk.js.org/
 artalk:
-  enable: true
+  enable: false
   server: 'https://artalk.orifinder.com' 
   site: 'OriFinder'
   css_url: 'https://cdn.jsdelivr.net/npm/artalk@2.10.0/dist/Artalk.css'  
