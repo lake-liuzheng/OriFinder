@@ -2,7 +2,7 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
+
 # Site
 title: OriFinder
 subtitle: 'Know your path. Walk it well.'
@@ -113,8 +113,23 @@ theme: lofi
 deploy:
   type: ''
 
-# 2026/09/02 Lake
+# Search
+## 2026/09/02 Lake
 search:
   path: search.json
   field: post
   content: true
+
+# Feed订阅
+feed:
+  enable: true                 # 启用插件
+  type: atom                   # Feed类型，可选 'atom' 或 'rss2'
+  path: atom.xml               # 生成的文件名和路径[reference:7]
+  limit: 20                    # 限制显示的文章数量，设为 0 或 false 显示全部
+  hub:                         # PubSubHubbub hub 地址，可选
+  content: true                # 是否在 Feed 中包含文章全文[reference:11][reference:12]
+  content_limit: 140           # 摘要长度，仅在 content 为 false 时生效
+  content_limit_delim: ' '     # 摘要截断分隔符
+  order_by: -date              # 文章排序方式，按日期倒序
+  icon:                        # 自定义 Feed 图标，可选
+  autodiscovery: true          # 是否在页面中添加自动发现标签
