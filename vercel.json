@@ -1,6 +1,10 @@
 {
+  "redirects": [
+    { "source": "/", "destination": "/blog", "statusCode": 301 }
+  ],
   "rewrites": [
     { "source": "/blog", "destination": "/" },
+    { "source": "/blog/", "destination": "/" },
     { "source": "/blog/:path*", "destination": "/:path*" }
   ]
 }
