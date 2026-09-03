@@ -1,2 +1,2 @@
-/ /blog/ 302
+/blog/ / 200
 /blog/* /:splat 200

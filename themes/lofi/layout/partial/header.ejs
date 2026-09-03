@@ -11,7 +11,7 @@
     <ul class="flex h-full m-0 p-0">
       <% for (var i in theme.menu){ %>
         <li class="h-full border-l border-black list-none">
-          <a href="<%- (theme.menu[i] === '/' ? config.root : config.root + theme.menu[i].replace(/^\//, '')) %>" class="h-full flex items-center px-8 font-bold uppercase tracking-widest text-xs hover:bg-black hover:text-white transition-colors duration-200 focus:bg-black focus:text-white active:bg-black whitespace-nowrap">
+          <a href="<%- url_for(theme.menu[i]) %>" class="h-full flex items-center px-8 font-bold uppercase tracking-widest text-xs hover:bg-black hover:text-white transition-colors duration-200 focus:bg-black focus:text-white active:bg-black whitespace-nowrap">
             <%= i %>
           </a>
         </li>
@@ -40,7 +40,7 @@
       </label>
       <ul tabindex="0" class="menu dropdown-content mt-0 z-[1] p-0 shadow bg-white border border-black w-[200px] rounded-none right-0 top-full absolute">
         <% for (var i in theme.menu){ %>
-          <li class="border-b border-black last:border-b-0"><a href="<%- (theme.menu[i] === '/' ? config.root : config.root + theme.menu[i].replace(/^\//, '')) %>" class="rounded-none py-4 px-6 font-bold uppercase tracking-widest hover:bg-black hover:text-white block text-sm"><%= i %></a></li>
+          <li class="border-b border-black last:border-b-0"><a href="<%- url_for(theme.menu[i]) %>" class="rounded-none py-4 px-6 font-bold uppercase tracking-widest hover:bg-black hover:text-white block text-sm"><%= i %></a></li>
         <% } %>
         <!-- Mobile Search -->
          <li class="border-b border-black last:border-b-0">
