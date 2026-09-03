@@ -119,3 +119,6 @@ search:
   field: post
   content: true
 
+# 加载样式 Lake
+include:
+  - _redirects
