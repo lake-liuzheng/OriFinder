@@ -41,3 +41,42 @@
         };
     </script>
 <% } %>
+
+
+<!-- Waline (Comment System) -->
+<% if (theme.waline && theme.waline.enable) { %>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <script>
+        function initWaline() {
+            const container = document.getElementById('waline');
+            if (!container) return;
+
+            if (window.walineInstance) {
+                try { window.walineInstance.destroy(); } catch(e) {}
+            }
+
+            import('https://unpkg.com/@waline/client@v3/dist/waline.js')
+                .then(module => {
+                    window.walineInstance = module.init({
+                        el: '#waline',
+                        serverURL: 'https://waline-lake-oazkg50kn-orifinder.vercel.app',
+                        lang: 'en',
+                        dark: 'html.dark',
+                        login: 'enable',
+                        pageview: true,
+                    });
+                })
+                .catch(err => console.warn('Waline 加载失败:', err));
+        }
+
+        // 页面加载时执行
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(initWaline, 300);
+        });
+
+        // Pjax 切换后重新执行
+        document.addEventListener('pjax:complete', function() {
+            setTimeout(initWaline, 400);
+        });
+    </script>
+<% } %>

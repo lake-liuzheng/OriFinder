@@ -47,9 +47,9 @@ artalk:
   css_url: 'https://cdn.jsdelivr.net/npm/artalk@2.10.0/dist/Artalk.css'  
   js_url: 'https://cdn.jsdelivr.net/npm/artalk@2.10.0/dist/Artalk.js'    
 
-# About CSS
-custom_css:
-  - /css/custom.css
+# Waline Comment System
+waline:
+  enable: true
 
 # Footer
 footer:
