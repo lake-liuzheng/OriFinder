@@ -137,6 +137,11 @@
   --waline-box-shadow: none;
 }
 
+/* 文本输入框内间隔 */
+#wl-edit {
+  padding: 5px !important;
+}
+
 /* 强制修改 Comments 标题字体 */
 #waline .wl-count {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
@@ -144,12 +149,12 @@
     color: #000 !important;
 }
 
-/* 完美还原经典黑底白纹 RSS 图标（滤镜法，绝对不会破坏原图形） */
+/* 灰底黑纹 RSS 图标（滤镜法） */
 #waline .wl-rss a svg {
     filter: invert(1) grayscale(1) brightness(2) !important;
 }
 
-/* 隐藏掉底部的“Powered by”和“v3.15.2”原文本 */
+/* 隐藏掉底部的Powered by和版本号 */
 #waline .wl-power {
     font-size: 0 !important;
 }

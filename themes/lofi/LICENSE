@@ -19,3 +19,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+# LOFI-EN Theme
+Copyright (c) 2026 Lake Liu
+
+Modified based on LOFI (original project name).
+Original project address: https://github.com/spatiostu/lofi
+Modifications: Translated the original theme into English, rewrote some style logic and parameter calls, fixed search invocation bugs, added Waline support and adapted its styles, hidden footer links, etc., made it more visually appealing on mobile devices.
+
+# Powered by Hexo
