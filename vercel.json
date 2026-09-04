@@ -1,14 +1,15 @@
+
 {
   "redirects": [
     { "source": "/", "destination": "/blog", "statusCode": 301 }
   ],
   "rewrites": [
+    { "source": "/blog/feed", "destination": "/blog/feed/index.xml" },
+    { "source": "/blog/feed/", "destination": "/blog/feed/index.xml" },
     { "source": "/blog", "destination": "/" },
     { "source": "/blog/", "destination": "/" },
     { "source": "/blog/:path*/", "destination": "/:path*/index.html" },
-    { "source": "/blog/:path*", "destination": "/:path*" },
-    { "source": "/blog/feed", "destination": "/blog/feed/index.xml" },
-    { "source": "/blog/feed/", "destination": "/blog/feed/index.xml" }
+    { "source": "/blog/:path*", "destination": "/:path*" }
   ],
   "cleanUrls": false
 }
