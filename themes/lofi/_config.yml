@@ -50,6 +50,7 @@ artalk:
 # Waline Comment System
 waline:
   enable: true
+  serverURL: 'https://waline-lake-three.vercel.app'
 
 # Footer
 footer:

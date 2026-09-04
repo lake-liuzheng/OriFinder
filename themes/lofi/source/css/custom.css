@@ -103,7 +103,7 @@
 
   /* 主题色 */
   --waline-theme-color: #000;
-  --waline-active-color: #000;
+  --waline-active-color: #333;
 
   /* 布局颜色 */
   --waline-color: #444;
@@ -137,27 +137,28 @@
   --waline-box-shadow: none;
 }
 
-/* 根据用户设置 ↓ */
-darkmode-selector {
-  /* 常规颜色 */
-  --waline-white: #000;
-  --waline-light-grey: #666;
-  --waline-dark-grey: #999;
+/* 强制修改 Comments 标题字体 */
+#waline .wl-count {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    font-size: 1.25rem !important;
+    color: #000 !important;
+}
 
-  /* 布局颜色 */
-  --waline-color: #888;
-  --waline-bg-color: #1e1e1e;
-  --waline-bg-color-light: #272727;
-  --waline-border-color: #333;
-  --waline-disable-bg-color: #444;
-  --waline-disable-color: #272727;
+/* 完美还原经典黑底白纹 RSS 图标（滤镜法，绝对不会破坏原图形） */
+#waline .wl-rss a svg {
+    filter: invert(1) grayscale(1) brightness(2) !important;
+}
 
-  /* 特殊颜色 */
-  --waline-bq-color: #272727;
+/* 隐藏掉底部的“Powered by”和“v3.15.2”原文本 */
+#waline .wl-power {
+    font-size: 0 !important;
+}
 
-  /* 其他颜色 */
-  --waline-info-bg-color: #272727;
-  --waline-info-color: #666;
+/* 恢复“Waline”三个字的大小和颜色 */
+#waline .wl-power a {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    font-size: 12px !important;
+    color: #000 !important;
 }
 
 /* ========== Waline 评论样式 结束========== */

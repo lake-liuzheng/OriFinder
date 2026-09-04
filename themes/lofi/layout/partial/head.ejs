@@ -1,8 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<!-- 自定义样式 -->
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<!-- 自定义样式 放在下面会覆盖上面的样式 -->
 <link rel="stylesheet" href="<%- url_for('css/custom.css') %>">
+
 <%
   var isPost = (typeof is_post === 'function' && is_post()) || page.layout === 'post';
   var siteTitle = config.title || '';

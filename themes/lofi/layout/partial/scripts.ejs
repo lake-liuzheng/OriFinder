@@ -45,7 +45,7 @@
 
 <!-- Waline (Comment System) -->
 <% if (theme.waline && theme.waline.enable) { %>
-    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    
     <script>
         function initWaline() {
             const container = document.getElementById('waline');
@@ -59,7 +59,7 @@
                 .then(module => {
                     window.walineInstance = module.init({
                         el: '#waline',
-                        serverURL: 'https://waline-lake-oazkg50kn-orifinder.vercel.app',
+                        serverURL: 'https://waline-lake-three.vercel.app',
                         lang: 'en',
                         dark: 'html.dark',
                         login: 'enable',
