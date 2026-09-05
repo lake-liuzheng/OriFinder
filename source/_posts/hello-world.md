@@ -2,6 +2,8 @@
 title: Hello World
 category:
   - I Ching
+  - Bazi
+  - Ziwei
 tags:
   - Hexo
   - Hello
